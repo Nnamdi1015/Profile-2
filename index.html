@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMADI SAMUEL NNAMDI - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Mr+Dafoe&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a', /* Very dark slate/blue */
+                            green: '#4ade80', /* Bright Mint/Green */
+                            gray: '#94a3b8',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        script: ['"Mr Dafoe"', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom shape for the image background */
+        .blob-shape {
+            border-radius: 30px 100px 30px 100px;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-white font-sans antialiased selection:bg-brand-green selection:text-brand-dark">
+
+    <!-- Navigation -->
+    <nav class="w-full py-6 px-6 md:px-12 flex justify-between items-center max-w-7xl mx-auto">
+        <!-- Logo -->
+        <div class="z-20">
+            <a href="#" class="text-4xl font-script text-brand-green tracking-wide">NK</a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-6">
+            <a href="#" class="bg-brand-green text-brand-dark font-semibold px-6 py-2 rounded-md hover:opacity-90 transition">About</a>
+            <a href="#" class="bg-brand-green text-brand-dark font-semibold px-6 py-2 rounded-md hover:opacity-90 transition">Projects</a>
+            <a href="#" class="border border-gray-500 text-gray-200 font-medium px-6 py-2 rounded-md hover:border-brand-green hover:text-brand-green transition">Contact</a>
+        </div>
+
+        <!-- Theme/Mobile Toggle -->
+        <div class="flex items-center gap-4">
+            <!-- Theme Icon (Sun/Moon placeholder) -->
+            <button class="text-gray-300 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636" class="hidden" />
+                </svg>
+            </button>
+            
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="max-w-7xl mx-auto px-6 md:px-12 py-12 md:py-20 flex flex-col-reverse md:flex-row items-center gap-12 md:gap-20">
+        
+        <!-- Text Content -->
+        <div class="flex-1 space-y-6 text-center md:text-left">
+            <h2 class="text-xl font-semibold text-gray-200">NNAMDI SAMUEL AMADI</h2>
+            
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green leading-tight">
+                Frontend Web Developer.
+            </h1>
+            
+            <p class="text-brand-gray text-lg md:text-xl leading-relaxed max-w-2xl">
+                I specialize in crafting immersive user experiences using the latest frontend technologies and frameworks to bring your vision to life. Additionally, my expertise extends to geoinformatics, where I excel in harnessing the power of spatial data to uncover actionable insights.
+            </p>
+            
+            <div class="pt-6 flex flex-col md:flex-row items-center gap-6 justify-center md:justify-start">
+                <a href="#" class="bg-brand-green text-brand-dark font-bold text-lg px-8 py-3 rounded hover:bg-opacity-90 transition shadow-[0_0_15px_rgba(74,222,128,0.4)]">
+                    Get in Touch
+                </a>
+                
+                <div class="flex items-center gap-2">
+                    <span class="relative flex h-3 w-3">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-green opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-green"></span>
+                    </span>
+                    <span class="text-gray-400 font-medium">Available now</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Content -->
+        <div class="flex-1 w-full flex justify-center md:justify-end">
+            <div class="relative w-full max-w-[400px]">
+                <!-- Green Background Shape -->
+                <div class="bg-brand-green blob-shape aspect-square w-full relative overflow-hidden flex items-end justify-center pt-10">
+                    <!-- 
+                        Note: In a real scenario, you would use a transparent PNG of the person.
+                        I am using a placeholder image and applying a mix-blend mode or simple masking
+                        to simulate the effect seen in the screenshot. 
+                    -->
+                    <img 
+                        src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                        alt="Nimrod Kibet" 
+                        class="w-[90%] h-[90%] object-cover object-top rounded-b-[30px] shadow-lg"
+                        style="mask-image: linear-gradient(to bottom, black 80%, transparent 100%);"
+                    >
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
