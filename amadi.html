@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400&family=Great+Vibes&display=swap');
+        
+        .font-display { font-family: 'Archivo Black', sans-serif; }
+        .font-body { font-family: 'Inter', sans-serif; }
+        .font-script { font-family: 'Great Vibes', cursive; }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center py-10 px-4">
+
+    <!-- Main Card Container -->
+    <div class="bg-white max-w-[600px] w-full shadow-2xl overflow-hidden relative">
+
+        <!-- Header / Handle -->
+        <div class="absolute top-8 right-8 z-10">
+            <p class="text-[10px] tracking-widest uppercase font-body text-gray-600">@reallygreatsite</p>
+        </div>
+
+        <!-- Typography Section: "about" -->
+        <!-- We use negative margin-bottom to pull it close to the image, line-height 0.8 for tightness -->
+        <div class="pt-12 px-6 pb-0 leading-[0.75]">
+            <h1 class="text-[clamp(5rem,18vw,9rem)] font-display text-black tracking-tighter -ml-1">
+                about
+            </h1>
+        </div>
+
+        <!-- Image Section with Overlay Text -->
+        <div class="relative w-full aspect-[4/5] bg-black">
+            <!-- The Image -->
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop" 
+                 alt="Portrait" 
+                 class="w-full h-full object-cover grayscale opacity-90">
+            
+            <!-- Typography Section: "me." (Overlay) -->
+            <!-- Positioned absolute to sit on top of the image, aligned with padding of the section above -->
+            <div class="absolute top-0 left-0 px-6 leading-[0.75] -mt-[1vw] sm:-mt-2">
+                <h1 class="text-[clamp(5rem,18vw,9rem)] font-display text-white tracking-tighter -ml-1">
+                    me.
+                </h1>
+            </div>
+        </div>
+
+        <!-- Footer / Content Section -->
+        <div class="p-8 sm:p-10 pb-16 bg-white">
+            <div class="flex flex-col md:flex-row gap-8 items-end">
+                
+                <!-- Text Content -->
+                <div class="flex-1">
+                    <h2 class="text-3xl font-display text-black mb-3 tracking-tight">nice to meet you!</h2>
+                    <p class="font-body text-xs sm:text-sm text-gray-600 text-justify leading-relaxed italic">
+                        I hold a Bachelor’s degree in <span class="font-medium">Theatre Arts & film Studies</span> from the
+                    University of Port Harcourt, Rivers State, Nigeria. With a strong passion for frontend development ,
+                    I strive to create meaningful digital and visual experiences. My goal is to build engaging,
+                    functional, and user-centered interfaces by leveraging modern development tools, best practices, and
+                    emerging technologies.
+
+                    Beyond development.
+                    </p>
+                </div>
+
+                <!-- Signature -->
+                <div class="md:w-1/3 flex justify-end md:justify-center w-full">
+                    <span class="font-script text-6xl text-gray-800 -rotate-6 transform">
+                        Nnamdi Amadi
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
